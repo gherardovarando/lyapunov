@@ -20,6 +20,7 @@
 #' dlyap(A = X, Q = diag(4), E = crossprod(X))
 #' 
 #' @export
+#' @useDynLib lyapunov
 
 dlyap <- function(A, Q, E = NULL) {
   if (is.null(E)) {

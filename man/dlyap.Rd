@@ -31,5 +31,5 @@ X <- c(135.2810,    7.8288,   14.0392,    7.2220,
 X = matrix(X, 4, 4)
 dlyap(A = X, Q = diag(4))
 dlyap(A = X, Q = diag(4), E = crossprod(X))
-}
 
+}

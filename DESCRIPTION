@@ -8,4 +8,4 @@ Maintainer: Giuseppe Ragusa <gragusa@luiss.it>
 Description: Calculate Sylvester equation
 License: GPL 2.0 or newer
 LazyLoad: yes
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
