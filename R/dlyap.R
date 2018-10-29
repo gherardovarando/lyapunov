@@ -26,7 +26,7 @@ dlyap <- function(A, Q, E = NULL) {
   if (is.null(E)) {
     E <- diag(1, NCOL(A))
   }
-  sylvester(A = A, E = E, QQ = Q, cond.number = FALSE)
+  sylvester_d(A = A, E = E, QQ = Q, cond.number = FALSE)
 }
 
 

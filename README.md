@@ -1,3 +1,9 @@
+###
+
+Forked from https://github.com/gragusa/lyapunov
+
+Continuous time Sylvester/ Lyapunov equations solver calling `SYLGC` subroutine
+
 ## Description
 
 `lyapunov` is a `R` package for solving the discrete time Lyapunov equation:
