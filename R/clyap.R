@@ -2,7 +2,9 @@
 #' \code{clyap} solve the continuous-time Lyapunov equations
 #' \deqn{AXE' + EXA'+Q=0.}
 #' 
-#' @param A, Q, E: Conformable suqare matrices.
+#' @param A Square matrix
+#' @param Q Square matrix
+#' @param E Square matrix or \code{NULL}
 #' 
 #' @return The solution matrix \eqn{X}.
 #' 

@@ -2,22 +2,26 @@
 % Please edit documentation in R/clyap.R
 \name{clyap}
 \alias{clyap}
-\title{Solve continuous-time Lyapunov equations
+\title{Solve continuous-time Lyapunov/Sylvester equations
 \code{clyap} solve the continuous-time Lyapunov equations
-\deqn{BX+ XB'+Q=0.}}
+\deqn{AXE' + EXA'+Q=0.}}
 \usage{
-clyap(B, Q, E = NULL)
+clyap(A, Q, E = NULL)
 }
 \arguments{
-\item{B, }{Q: Conformable suqare matrices.}
+\item{A}{Square matrix}
+
+\item{Q}{Square matrix}
+
+\item{E}{Square matrix or \code{NULL}}
 }
 \value{
 The solution matrix \eqn{X}.
 }
 \description{
-Solve continuous-time Lyapunov equations
+Solve continuous-time Lyapunov/Sylvester equations
 \code{clyap} solve the continuous-time Lyapunov equations
-\deqn{BX+ XB'+Q=0.}
+\deqn{AXE' + EXA'+Q=0.}
 }
 \details{
 `clyap` use `BKDIS` from ALGORITHM 705, COLLECTED ALGORITHMS FROM ACM
