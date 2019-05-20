@@ -2,11 +2,14 @@
 % Please edit documentation in R/clyap.R
 \name{clyap}
 \alias{clyap}
+\alias{clyap2}
 \title{Solve continuous-time Lyapunov/Sylvester equations
 \code{clyap} solve the continuous-time Lyapunov equations
 \deqn{AXE' + EXA'+Q=0.}}
 \usage{
-clyap(A, Q, E = NULL)
+clyap(A, Q, E = NULL, all = FALSE)
+
+clyap2(A, Q, WKV, E = NULL)
 }
 \arguments{
 \item{A}{Square matrix}
@@ -14,6 +17,10 @@ clyap(A, Q, E = NULL)
 \item{Q}{Square matrix}
 
 \item{E}{Square matrix or \code{NULL}}
+
+\item{all}{logical}
+
+\item{WKV}{the working vector obtained by a first call to lyapunov solver}
 }
 \value{
 The solution matrix \eqn{X}.
